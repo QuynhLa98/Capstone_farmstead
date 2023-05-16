@@ -25,11 +25,71 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Style -->
+    <link rel="stylesheet" href="./style/style.css">
     <title>Farmstead</title>
   </head>
   <body>
     <!-- Phần của Quỳnh La phụ trách -->
     <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <!-- Logo -->
+          <div class="logo">
+            <a class="serif" href="#">
+              Farmstead
+              <i class="fa-solid fa-leaf"></i>
+            </a>
+          </div>
+          <!-- Nav -->
+          <div class="nav">
+            <!-- Search -->
+          <div class="search__right">
+            <form action="">
+              <input type="search" name="s" placeholder="">
+            </form>
+          </div>
+          <!-- Dark mode -->
+          <div class="dark__mode">
+            <i class="fa-regular fa-moon"></i>
+          </div>
+          <!-- Menu -->
+          <div class="menu">
+            <div onclick="myFunction()" class="dropbtn">
+              <i class="fa-sharp fa-solid fa-bars"></i>
+            </div>
+            <ul id="myDropdown" class="sub__menu sans-serif">
+              <li class="menu__item current__page__item">
+                <a href="#" aria-current="page">Home</a> 
+              </li>
+              <li class="menu__item">
+                <a href="#">About</a> 
+              </li>
+              <li class="menu__item">
+                <a href="#">Services</a> 
+              </li>
+              <li class="menu__item">
+                <a href="#">Blog Posts</a> 
+              </li>
+              <li class="menu__item">
+                <a href="#">Langding page</a> 
+              </li>
+              <li class="menu__item">
+                <a href="#">Elements page</a> 
+              </li>
+              <li class="menu__item">
+                <a href="#">404 page</a> 
+              </li>
+              <li class="menu__item">
+                <a href="#">Contact</a> 
+              </li>
+            </ul>
+          </div>
+          </div>
+        </nav>
+      </div>
+    </header>
     <!-- Carosel -->
     <!-- Service -->
     <!-- Catalog -->
@@ -40,5 +100,10 @@
     <!-- Costomer -->
     <!-- Footer -->
     <!-- Link src script -->
+    <script>
+      function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+    </script>
   </body>
 </html>

@@ -4,3 +4,137 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Clear */
+.clear {
+    clear: both;
+}
+
+/* Container */
+.container {
+    max-width: 1199px;
+    margin: auto;
+}
+
+/* Fonts */
+/* Volkhov */
+.serif {
+    font-family: 'Volkhov', serif;
+}
+/* Source */
+.sans-serif {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Header */
+.navbar {
+    width: 100%;
+    display: flex;
+    margin: 20px 0;
+    height: 50px;
+}
+
+.logo {
+    width: 25%;
+    background-color: aqua;
+}
+
+.logo a {
+    font-size: 50px;
+    text-decoration: none;
+    color: #fb811e;
+    position: absolute;
+    transition: all 0.5s;
+    font-weight: 700;
+}
+
+.logo i {
+    color: #fb811e;
+    position: relative;
+    font-size: 25px;
+    top: -30px;
+    left: -180px;
+    transition: all 0.5s;
+}
+
+.logo:hover a,
+.logo:hover i {
+    color: black;
+}
+
+.nav {
+    width: 75%;
+    background-color: aquamarine;
+    justify-content: right;
+    display: flex;
+}
+
+.nav .search__right input {
+    background: url(../img/search.png) no-repeat 15px center;
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid #eee;
+    cursor: pointer;
+}
+
+.nav .dark__mode i {
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 35px;
+    margin-top: 10px;
+    transition: all 0.5s;
+}
+
+.dark__mode:hover i {
+    color: #fb811e;
+}
+
+.nav .menu i {
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 35px;
+    margin-top: 10px;
+    
+}
+
+.sub__menu {
+    list-style: none;
+    background-color: #fff;
+    box-shadow: 0 20px 62px rgba(4, 20, 69, .1);
+    text-align: center;
+    max-height: 400px;
+    position: absolute;
+    top: 70px;
+    right: 360px;
+    border-radius: 5px;
+    display: none;
+}
+
+.sub__menu li {
+    padding: 10px;
+}
+
+.menu__item a {
+    text-decoration: none;
+    color: #060606;
+    margin: 50px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 0.5s;
+}
+
+.current__page__item a {
+    color: #fb811e;
+}
+
+.menu__item:hover a {
+    color: #fb811e;
+}
+
+.show {
+    display: block;
+}
