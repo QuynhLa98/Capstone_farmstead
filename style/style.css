@@ -4,3 +4,36 @@
   padding: 0;
   box-sizing: border-box;
 }
+.item{
+  display:flex;
+  justify-content: center;
+  padding: 30px 20px;
+  margin-top: 20px;
+  border: 1px solid white;
+}
+.item-img{
+  width: 30%;
+}
+.item-img img{
+  width: 100%;
+  height: auto;
+}
+.item-text{
+  padding: 0 20px;
+}
+.item-text h4{
+  font-weight: 600;
+}
+.item-text p{
+  color: #707070;
+  margin-top: 10px;
+}
+.item:hover{
+  border: 1px solid #eee;
+  border-radius: 10px;
+  cursor: pointer;
+  
+}
+.item:hover h4{
+  color: green;
+}
