@@ -4,36 +4,139 @@
   padding: 0;
   box-sizing: border-box;
 }
-.item{
-  display:flex;
+
+.container {
+  max-width: 1200px;
+
+}
+.row{
+  padding: 10px;
+}
+.item {
+  display: flex;
   justify-content: center;
   padding: 30px 20px;
   margin-top: 20px;
   border: 1px solid white;
+
 }
-.item-img{
+
+.item-img {
   width: 30%;
 }
-.item-img img{
+
+.item-img img {
   width: 100%;
   height: auto;
 }
-.item-text{
+
+.item-text {
   padding: 0 20px;
 }
-.item-text h4{
+
+.item-text h4 {
   font-weight: 600;
+  color: black;
 }
-.item-text p{
+
+.item-text p {
   color: #707070;
   margin-top: 10px;
 }
-.item:hover{
+
+.item:hover {
   border: 1px solid #eee;
   border-radius: 10px;
   cursor: pointer;
-  
+  transition: all 1s;
+
 }
-.item:hover h4{
+
+.row a:hover {
+  text-decoration: none;
+}
+
+.item:hover h4 {
   color: green;
 }
+
+.product-text h4 {
+  color: #fb811e;
+  font-weight: 500;
+}
+
+.product-text h2 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.product-text p {
+  color: #707070;
+  margin-top: 20px;
+}
+
+.product-text button {
+  border: none;
+  background-color: #fb811e;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 30px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.product-text button:hover {
+  background-color: green;
+  cursor: pointer;
+}
+
+.product-img {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+}
+
+.product-img img {
+  width: 100%;
+}
+
+.product-img p {
+  position: absolute;
+  left: 0px;
+  right: 0;
+  bottom: 0;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: rgb(255 255 255 / 27%);
+  padding: 10px;
+  margin: 20px;
+}
+.product-img::before {
+  position: absolute;
+  top: 0;
+  left: -75%;
+  z-index: 2;
+  content: '';
+  opacity: 0;
+  width: 50%;
+  height: 100%;
+  display: block;
+  transform: skewX(-17deg);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+}
+
+.product-img:hover::before {
+  animation: leftright;
+  animation-duration: 1s;
+}
+ @keyframes leftright{
+  100%{
+    left: 125%;
+  }
+  100%{
+    left: 125%;
+    opacity: 1;
+  }
+ }
