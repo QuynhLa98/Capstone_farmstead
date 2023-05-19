@@ -1,20 +1,9 @@
-/* Reset CSS */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 /* Clear */
 .clear {
     clear: both;
 }
 
-/* Container */
-.container {
-    max-width: 1199px;
-    margin: auto;
-}
 
 /* Fonts */
 /* Volkhov */
@@ -27,114 +16,197 @@
 }
 
 /* Header */
+#site-header {
+    margin-top: 15px;
+}
+
+
+/* Logo */
 .navbar {
-    width: 100%;
-    display: flex;
-    margin: 20px 0;
-    height: 50px;
+    justify-content: space-between;
 }
 
-.logo {
-    width: 25%;
-    background-color: aqua;
-}
-
-.logo a {
-    font-size: 50px;
-    text-decoration: none;
+.navbar a.navbar-brand {
     color: #fb811e;
-    position: absolute;
-    transition: all 0.5s;
+    font-size: 30px;
     font-weight: 700;
+    transition: all .5s;
 }
 
-.logo i {
-    color: #fb811e;
-    position: relative;
-    font-size: 25px;
-    top: -30px;
-    left: -180px;
-    transition: all 0.5s;
+.navbar-brand i {
+    font-size: 20px;
+    position: absolute;
+    top: 5px;
+    left: 68px;
 }
 
-.logo:hover a,
-.logo:hover i {
+a.navbar-brand:hover {
     color: black;
 }
+/* //Logo */
 
-.nav {
-    width: 75%;
-    background-color: aquamarine;
-    justify-content: right;
-    display: flex;
-}
-
-.nav .search__right input {
-    background: url(../img/search.png) no-repeat 15px center;
-    background-color: #fff;
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
+/* Search button */
+.search-right input[type=search] {
+    background: #fff url(../img/search.png) no-repeat 10px center;
     border: 1px solid #eee;
+    padding: 0 10px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    transition: all .5s;
     cursor: pointer;
 }
+/* //Search button */
 
-.nav .dark__mode i {
-    font-size: 30px;
+
+/*  Dark mode  */
+.cont-ser-position {
+    margin: 0 25px;
+    height: 35px;
+}
+
+.navigation i {
+    font-size: 22px;
+    line-height: 35px;
     color: #fff;
+    transition: all .5s;
     cursor: pointer;
-    margin-left: 35px;
-    margin-top: 10px;
-    transition: all 0.5s;
 }
 
-.dark__mode:hover i {
+.navigation i:hover {
     color: #fb811e;
 }
+/*  //Dark mode  */
 
-.nav .menu i {
-    font-size: 30px;
-    color: #fff;
-    cursor: pointer;
-    margin-left: 35px;
-    margin-top: 10px;
-    
+/* Menu */
+.nav-item {
+    list-style: none;
 }
 
-.sub__menu {
+.nav-link i {
+    color: #fff;
+    font-size: 22px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: -215px;
+    display: none;
+    float: left;
+    min-width: 10rem;
+    font-size: 1rem;
+    text-align: center;
     list-style: none;
     background-color: #fff;
     box-shadow: 0 20px 62px rgba(4, 20, 69, .1);
-    text-align: center;
-    max-height: 400px;
-    position: absolute;
-    top: 70px;
-    right: 360px;
-    border-radius: 5px;
-    display: none;
+    border: none;
+    border-radius: .25rem;
 }
 
-.sub__menu li {
-    padding: 10px;
+
+.nav-item:checked .dropdown-menu {
+    margin-top: 3px;
 }
 
-.menu__item a {
-    text-decoration: none;
+
+.dropdown-menu .action {
+    color: #fb811e;
+}
+
+.dropdown-item {
     color: #060606;
-    margin: 50px;
     text-transform: uppercase;
     font-weight: 600;
-    transition: all 0.5s;
+    transition: all .5s;
+    padding: 10px 70px;
 }
 
-.current__page__item a {
+.dropdown-item:hover {
     color: #fb811e;
+    background-color: transparent;
 }
 
-.menu__item:hover a {
-    color: #fb811e;
+
+/* // Menu */
+
+/* Carousel */
+.carousel {
+    height: 100vh;
 }
 
-.show {
-    display: block;
+
+.banner-left-content {
+    position: absolute;
+    z-index: 2;
+}
+
+.top__title h1 {
+    font-size: 120px;
+    font-weight: 600;
+    color: #f4f4f4;
+    margin-left: 110px;
+    position: relative;
+    top: -15px;
+}
+
+.mid__title {
+    position: relative;
+    top: -90px;
+    left: 175px;
+}
+
+.mid__title h1 {
+    font-size: 50px;
+    color: #060606;
+    font-weight: 600;
+}
+
+.mid__title p {
+    font-size: 20px;
+    color: #707070;
+    margin-top: 20px;
+}
+
+.cta__carousel button {
+    padding: 15px 30px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background-color: #fb811e;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all .5s;
+    position: relative;
+    top: -70px;
+    left: 175px;
+}
+
+.cta__carousel button:hover {
+    background-color: #009f4d;
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    opacity: 1;
+    margin: 0 5px;
+}
+
+.carousel-indicators .active {
+    background-color: #fb811e;
+}
+
+.carousel-caption {
+    right: auto;
+    left: 88%;
+    top: 80%;
+    font-size: 20px;
+}
+
+.carousel-caption h5 span {
+    font-size: 16px;
 }
