@@ -131,10 +131,9 @@ a.navbar-brand:hover {
 /* // Menu */
 
 /* Carousel */
-.carousel {
+.carousel, .carousel-inner, .carousel-item {
     height: 100vh;
 }
-
 
 .banner-left-content {
     position: absolute;
@@ -182,6 +181,7 @@ a.navbar-brand:hover {
     position: relative;
     top: -70px;
     left: 175px;
+    transition: all .5s ease-in-out;
 }
 
 .cta__carousel button:hover {
@@ -203,10 +203,87 @@ a.navbar-brand:hover {
 .carousel-caption {
     right: auto;
     left: 88%;
-    top: 80%;
+    bottom: 5%;
     font-size: 20px;
 }
 
 .carousel-caption h5 span {
     font-size: 16px;
+}
+
+/* Service */
+.service__left h3 {
+    color: #fb811e;
+    font-size: 22px;
+}
+
+.service__left h1 {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 600;
+    color: #060606;
+}
+
+.service__left p {
+    margin: 0;
+    padding: 0;
+}
+
+.btn-service {
+    background-color: #fb811e;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: none;
+    transition: all .5s ease-in-out;
+}
+
+.btn-service:hover {
+    background-color: #009f4d;
+}
+
+.service__left .btn:hover {
+    color: #fff;
+}
+
+.service__img {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.service__img .box-wrap {
+    padding: 40px 30px;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0 1rem 3rem rgb(0 0 0 / 3%);
+    background-color: #fff;
+}
+
+.service__img .box-wrap:hover {
+    transition: .3s;
+    box-shadow: 0 25px 98px 0 rgb(0 0 0 / 10%);
+}
+
+.service__img .box-wrap img {
+    max-width: 65px;
+    display: block;
+    margin: 0 auto;
+}
+
+.service__img .box-wrap h4 a {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+    margin-top: 25px;
+    display: block;
+    color: var(--heading-color);
+    text-decoration: none;
+}
+
+.service__img .box-wrap h4 a:hover {
+    color: #009f4d;
 }
