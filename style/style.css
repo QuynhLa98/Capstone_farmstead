@@ -140,3 +140,21 @@
     opacity: 1;
   }
  }
+ .costomer{
+  background-image: url(../img/bg1.jpg);
+ }
+ .costomer-item{
+  display: flex!important;
+ }
+ .costomer-item-left img{
+  border-radius: 100px;
+ }
+ .costomer-item-left h5,p{
+  color: white;
+ }
+ .costomer-item-right p{
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  padding: 10px 50px;
+ }
