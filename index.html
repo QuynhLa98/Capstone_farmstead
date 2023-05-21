@@ -20,8 +20,10 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- slider -->
+  <link rel="stylesheet" href="./libs/slick/slick.css">
+  <link rel="stylesheet" href="./libs/slick/slick-theme.css">
 
-  
 
   <link rel="stylesheet" href="./style/style.css">
   <title>Farmstead</title>
@@ -171,7 +173,58 @@
   <!-- Costomer -->
   <section class="costomer">
     <div class="container">
-      
+      <div class="costomer-content">
+        <div class="costomer-slider">
+          <div class="costomer-item">
+            <div class="costomer-item-left">
+              <img src="./img/testi1.jpg" alt="">
+              <h5>Dennis wilson</h5>
+              <p>Customer</p>
+            </div>
+            <div class="costomer-item-right">
+              <p>Lorem ipsum dolor sit amet int consectetur adipisicing elit. Velita
+                beatae
+                laudantium Quas minima sunt natus tempore, maiores aliquid modi felis
+                sequi optio lacinia id ipsum non velit, culpa.
+                voluptate rem ullam dolore nisi est quasi, doloribus tempora.
+                est elit. Non quae, fugiat ad libero justo sed amet.</p>
+            </div>
+          </div>
+          <div class="costomer-item">
+            <div class="costomer-item-left">
+              <img src="./img/testi2.jpg" alt="">
+              <h5>Dennis wilson</h5>
+              <p>Customer</p>
+            </div>
+            <div class="costomer-item-right">
+              <p>Lorem ipsum dolor sit amet int consectetur adipisicing elit. Velita
+                beatae
+                laudantium Quas minima sunt natus tempore, maiores aliquid modi felis
+                sequi optio lacinia id ipsum non velit, culpa.
+                voluptate rem ullam dolore nisi est quasi, doloribus tempora.
+                est elit. Non quae, fugiat ad libero justo sed amet.</p>
+            </div>
+          </div>
+          <div class="costomer-item">
+            <div class="costomer-item-left">
+              <img src="./img/testi3.jpg" alt="">
+              <h5>Dennis wilson</h5>
+              <p>Customer</p>
+            </div>
+            <div class="costomer-item-right">
+              <p>Lorem ipsum dolor sit amet int consectetur adipisicing elit. Velita
+                beatae
+                laudantium Quas minima sunt natus tempore, maiores aliquid modi felis
+                sequi optio lacinia id ipsum non velit, culpa.
+                voluptate rem ullam dolore nisi est quasi, doloribus tempora.
+                est elit. Non quae, fugiat ad libero justo sed amet.</p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
     </div>
   </section>
   <!-- Footer -->
@@ -187,6 +240,18 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+    integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./libs/slick/slick.min.js"></script>
+  <script>
+    
+$(document).ready(function(){
+  $('.costomer-slider').slick({
+    // setting-name: setting-value
+  });
+});
+  </script>
 </body>
 
 </html>
