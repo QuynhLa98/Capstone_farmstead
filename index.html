@@ -23,10 +23,10 @@
   <!-- slider -->
   <link rel="stylesheet" href="./libs/slick/slick.css">
   <link rel="stylesheet" href="./libs/slick/slick-theme.css">
-  
-  
 
-  
+
+
+
   <link rel="stylesheet" href="./style/style.css">
   <title>Farmstead</title>
 </head>
@@ -173,53 +173,60 @@
   </section>
 
   <!-- Costomer -->
-  <section class="costomer">
+  <section class="costomer py-5">
+
     <div class="container">
       <div class="costomer-content">
         <div class="costomer-slider">
-          <div class="costomer-item">
-            <div class="costomer-item-left">
-              <img src="./img/testi1.jpg" alt="">
+          <div class="costomer-item row">
+            <div class="costomer-item-left col-md-3">
+              <a href="#"><img src="./img/testi1.jpg" alt=""></a>
               <h5>Dennis wilson</h5>
               <p>Customer</p>
             </div>
-            <div class="costomer-item-right">
-              <p>Lorem ipsum dolor sit amet int consectetur adipisicing elit. Velita
+            <div class="costomer-item-right col-md-9">
+              <i class="fa-solid fa-quote-left"></i>
+              <blockquote></blockquote>
+              <q>Lorem ipsum dolor sit amet int consectetur adipisicing elit. Velita
                 beatae
                 laudantium Quas minima sunt natus tempore, maiores aliquid modi felis
                 sequi optio lacinia id ipsum non velit, culpa.
                 voluptate rem ullam dolore nisi est quasi, doloribus tempora.
-                est elit. Non quae, fugiat ad libero justo sed amet.</p>
+                est elit. Non quae, fugiat ad libero justo sed amet.</q>
             </div>
           </div>
           <div class="costomer-item">
-            <div class="costomer-item-left">
+            <div class="costomer-item-left col-md-3">
               <img src="./img/testi2.jpg" alt="">
               <h5>Dennis wilson</h5>
               <p>Customer</p>
             </div>
-            <div class="costomer-item-right">
-              <p>Lorem ipsum dolor sit amet int consectetur adipisicing elit. Velita
+            <div class="costomer-item-right col-md-9">
+              <i class="fa-solid fa-quote-left"></i>
+              <blockquote></blockquote>
+              <q>Lorem ipsum dolor sit amet int consectetur adipisicing elit. Velita
                 beatae
                 laudantium Quas minima sunt natus tempore, maiores aliquid modi felis
                 sequi optio lacinia id ipsum non velit, culpa.
                 voluptate rem ullam dolore nisi est quasi, doloribus tempora.
-                est elit. Non quae, fugiat ad libero justo sed amet.</p>
+                est elit. Non quae, fugiat ad libero justo sed amet.</q>
             </div>
           </div>
           <div class="costomer-item">
-            <div class="costomer-item-left">
+            <div class="costomer-item-left col-md-3">
               <img src="./img/testi3.jpg" alt="">
               <h5>Dennis wilson</h5>
               <p>Customer</p>
             </div>
-            <div class="costomer-item-right">
-              <p>Lorem ipsum dolor sit amet int consectetur adipisicing elit. Velita
+            <div class="costomer-item-right col-md-9">
+              <i class="fa-solid fa-quote-left"></i>
+              <blockquote></blockquote>
+              <q>Lorem ipsum dolor sit amet int consectetur adipisicing elit. Velita
                 beatae
                 laudantium Quas minima sunt natus tempore, maiores aliquid modi felis
                 sequi optio lacinia id ipsum non velit, culpa.
                 voluptate rem ullam dolore nisi est quasi, doloribus tempora.
-                est elit. Non quae, fugiat ad libero justo sed amet.</p>
+                est elit. Non quae, fugiat ad libero justo sed amet.</q>
             </div>
 
           </div>
@@ -230,6 +237,55 @@
     </div>
   </section>
   <!-- Footer -->
+  <footer>
+    <div class="container py-5">
+      <div class="row footer">
+        <div class="col-lg-4 footer-contact">
+          <h4>FIND US</h4>
+          <p>Address: 10001 Alleghany st, 5th Avenue, 235 Terry, London.</p>
+          <p>Phone: <a href="#">+12 23456790</a></p>
+          <p>Email: <a href="#">info@example.com</a> </p>
+          <p>Fax: <a href="#">+ 11 367 21890</a> </p>
+        </div>
+        <div class="col-lg-4">
+          <h3 class="footer-logo"><a href="#"> Farmstead <i class="fa-solid fa-leaf"></i></a>
+
+          </h3>
+          <p class="footer-space">Duis imperdiet sapien tortor, vitae congue diam auctor vitae. Aliquam eget turpis
+            ornare, euismod ligul aeget,
+            enenatis dui. </p>
+          <p>© 2023 Farmstead. All Rights Reserved | WordPress Theme by <a href="#">W3Layout.</a></p>
+        </div>
+        <div class="col-lg-4">
+          <h4>NEWSLETTER</h4>
+          <P>Subscribe to our mailing list and get updates to your email inbox.</P>
+          <div class="footer-input">
+            <input type="text" placeholder="Email Adress"><button><i class="fa-solid fa-paper-plane"></i></button>
+          </div>
+          <div class="icon">
+            <ul>
+              <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+              <li><a href="#"> <i class="fa-brands fa-linkedin-in"></i></a></li>
+              <li><a href="#"> <i class="fa-brands fa-twitter"></i></a></li>
+              <li><a href="#"> <i class="fa-brands fa-google-plus-g"></i></a></li>
+              <li><a href="#"> <i class="fa-brands fa-github"></i></a></li>
+            </ul>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+
+  </footer>
+  <a class="backtotop cd-top text-replace js-cd-top" href="#">
+    <i class="fa-solid fa-turn-up"></i>
+  </a>
+
+
+  
   <!-- Link src script -->
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -247,13 +303,21 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="./libs/slick/slick.min.js"></script>
   <script>
-    
-$(document).ready(function(){
-  $('.costomer-slider').slick({
-    // setting-name: setting-value
-  });
-});
+    $(document).ready(function () {
+      $('.costomer-slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: false,
+
+      });
+    });
+
+
   </script>
+  <script src="./libs/backtotop/util.js"></script>
+  <script src="./libs/backtotop/main.js"></script>
 </body>
 
 </html>
