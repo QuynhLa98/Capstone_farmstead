@@ -9,9 +9,11 @@
   max-width: 1200px;
 
 }
-.row{
+
+.row {
   padding: 10px;
 }
+
 .item {
   display: flex;
   justify-content: center;
@@ -59,6 +61,18 @@
 .item:hover h4 {
   color: green;
 }
+
+
+@media (max-width:450px) {
+  .product-text {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 1em;
+
+  }
+}
+
+
 
 .product-text h4 {
   color: #fb811e;
@@ -113,6 +127,7 @@
   padding: 10px;
   margin: 20px;
 }
+
 .product-img::before {
   position: absolute;
   top: 0;
@@ -131,21 +146,25 @@
   animation: leftright;
   animation-duration: 1s;
 }
- @keyframes leftright{
-  100%{
+
+@keyframes leftright {
+  100% {
     left: 125%;
   }
-  100%{
+
+  100% {
     left: 125%;
     opacity: 1;
   }
- }
- .costomer{
+}
+
+.costomer {
   background-image: url(../img/bg1.jpg);
   position: relative;
   margin-top: 70px;
- }
- .costomer::before{
+}
+
+.costomer::before {
   content: "";
   background-color: rgb(10 10 10 / 52%);
   position: absolute;
@@ -153,102 +172,133 @@
   top: 0;
   left: 0;
   right: 0;
- }
- .costomer-content{
+}
+
+.costomer-content {
   max-width: 900px;
- }
- .costomer-slider{
+}
+
+.costomer-slider {
   display: flex;
- }
- .costomer-item{
-  display: flex!important; 
-  position: relative; 
-  top: 50px;
- }
- .slick-dots{
-  bottom: 50px;
- }
- .costomer-item .costomer-item-left{
+}
+
+.costomer-item {
+  display: flex !important;
+  position: relative;
+  
+}
+
+.costomer-item .costomer-item-left {
   text-align: center;
   position: relative;
   top: 40px;
- }
- .costomer-item-left img{
+}
+
+.costomer-item-left img {
   border-radius: 100px;
   width: 90px;
   height: 90px;
   display: inline-block;
- }
- .costomer-item .costomer-item-left{
+}
+
+.costomer-item .costomer-item-left {
   color: white;
- }
- .costomer-item-right i{
+}
+
+.costomer-item-right i {
   color: #fb811e;
   font-size: 30px;
- }
- .costomer-item-right q{
+}
+
+
+.costomer-item-right q {
 
   font-size: 20px;
   color: white;
   display: block;
   text-indent: 20px;
   position: relative;
- }
-.costomer-item-right p::before{
+  padding-bottom: 50px;
+
 
 }
- .slick-dots li button:before{
+@media (max-width:768px) {
+  .costomer-item-right q {
+    font-size: 17px;
+    text-align: center;
+  }
+  
+}
+
+.costomer-item-right p::before {
+  box-sizing: inherit;
+}
+
+.slick-dots li button:before {
   font-size: 13px;
   color: #8f7e58;
   opacity: 0.5;
 
- }
- .slick-dots li.slick-active button::before{
+}
+
+.slick-dots li.slick-active button::before {
   color: #fb811e;
- }
- .footer p{
+}
+
+.footer p {
   color: gray;
 
- }
-.footer h4{
+}
+
+.footer h4 {
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 40px;
 }
-.footer h3{
+
+.footer h3 {
   font-size: 30px;
   margin-bottom: 30px;
 
 }
-.footer a{
+
+.footer a {
   color: green;
 }
-.footer-contact a{
+
+.footer-contact a {
   color: gray;
 }
-.footer-logo a{
+
+.footer-logo a {
   color: #fb811e;
 }
-.footer-logo a:hover{
+
+.footer-logo a:hover {
   color: black;
 }
-.footer-logo a{
+
+.footer-logo a {
   font-weight: 600;
   font-size: 30px;
 }
-.footer-logo a i{
+
+.footer-logo a i {
   position: absolute;
   left: 55px;
   top: -10px;
   font-size: 20px;
 }
-.footer-space{
+
+.footer-space {
   margin-bottom: 40px;
 }
-.footer-input{
+
+.footer-input {
   margin-bottom: 20px;
 }
-.footer-input input{
+
+.footer-input input {
   width: 80%;
   border: 1px solid #f4f4f4;
   padding: 10px 25px;
@@ -258,7 +308,8 @@
   color: #707070;
 
 }
-.footer-input button{
+
+.footer-input button {
   width: 20%;
   background-color: green;
   border: 1px solid gray;
@@ -268,27 +319,30 @@
 
 }
 
-.footer-input button:hover{
+.footer-input button:hover {
   opacity: 0.75;
 
 }
 
-.footer-input i{
+.footer-input i {
   color: white;
 
 }
 
-.icon{
+.icon {
   padding-top: 10px;
 }
-.icon ul{
+
+.icon ul {
   list-style: none;
   text-decoration: none;
 }
-.icon ul li{
+
+.icon ul li {
   display: inline-block;
 }
-.icon a{
+
+.icon a {
   width: 30px;
   height: 30px;
   background-color: #f4f4f4;
@@ -297,16 +351,19 @@
   text-align: center;
   margin-right: 10px;
 }
+
 .icon a i {
   font-size: 15px;
 
 }
-.icon a:hover{
+
+.icon a:hover {
   color: #fb811e;
   background-color: #fff5dc;
   box-shadow: 0 3px 5px 0 rgb(10 10 10 / 24%)
 }
-.backtotop{
+
+.backtotop {
   background-color: green;
   border-radius: 5px;
   position: fixed;
@@ -314,20 +371,19 @@
   bottom: 50px;
   visibility: hidden;
 }
-.backtotop i{
+
+.backtotop i {
   padding: 15px;
   font-size: 15px;
   color: white;
 
 }
 
-.cd-top--is-visible { 
+.cd-top--is-visible {
   visibility: visible;
   opacity: 1;
 }
 
-.cd-top--fade-out { 
+.cd-top--fade-out {
   opacity: .5;
 }
-
-
