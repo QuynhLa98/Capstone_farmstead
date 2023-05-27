@@ -283,45 +283,66 @@ a.navbar-brand:hover {
 }
 
 
-/* @media screen and (max-width: 768px) {
-  .banner-left-content {
-    position: absolute;
-    top: 100px;
-    left: 10px;
-  }
-  .mid__title h1 {
-    font-size: 30px;
-  }
-} */
 
-
-/* @media (max-width: 991px) {
-  .banner-left-content {
-    position: absolute;
-    top: 120px;
-    left: -110px;
+@media only screen and (max-width: 1200px) and (min-width: 991px) {
+  .carousel,
+  .carousel-inner,
+  .carousel-item {
+    height: 100vh !important;
+  }
+  .w-100 {
+    width: auto !important;
+  }
+  .carousel-caption {
+    left: 80% !important;
+    bottom: 0 !important;
+  }
+  .carousel,
+  .banner-right {
+    position: relative;
+    margin: 0;
   }
   .banner-left-content .top__title h1 {
     font-size: 80px;
   }
   .banner-left-content .mid__title h1 {
     font-size: 32px;
-    margin-top: 35px;
+    line-height: 42px;
+    margin-top: 30px;
     margin-left: -20px;
     width: 400px;
   }
   .banner-left-content .mid__title p {
     font-size: 17px;
-    width: 400px;
     margin-left: -20px;
+    width: 400px;
   }
   .cta__carousel button {
     margin-left: 150px !important;
   }
-  .carousel,
-  .banner-right {
-    position: relative;
-    margin: 0;
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  .banner-left-content {
+    left: -100px;
+  }
+  .banner-left-content .top__title h1 {
+    font-size: 80px;
+  }
+  .banner-left-content .mid__title h1 {
+    font-size: 32px;
+    line-height: 42px;
+    margin-top: 30px;
+    margin-left: -20px;
+    width: 400px;
+  }
+  .banner-left-content .mid__title p {
+    font-size: 17px;
+    margin-left: -20px;
+    width: 400px;
+  }
+  .cta__carousel button {
+    margin-left: 150px !important;
   }
   .carousel,
   .carousel-inner,
@@ -332,9 +353,57 @@ a.navbar-brand:hover {
     width: auto !important;
   }
   .carousel-caption {
-    left: 75% !important;
+    left: 70% !important;
+    bottom: 0 !important;
   }
-} */
+}
+
+
+
+@media only screen and (max-width: 767px) and (min-width: 480px) {
+  .carousel,
+  .carousel-inner,
+  .carousel-item {
+    height: 100vh !important;
+  }
+  .w-100 {
+    width: auto !important;
+  }
+  .carousel-caption {
+    left: 80% !important;
+    bottom: 0 !important;
+  }
+  .banner-left-content {
+    padding: 1rem;
+    height: 380px;
+    background-color: #fff;
+    top: 180px;
+    border-radius: 20px;
+    margin: 0 30px;
+  }
+  .banner-left-content .top__title h1 {
+    color: #f4f4f4;
+    font-size: 80px;
+    margin-top: 20px;
+    margin-left: 0px;
+    
+  }
+  .banner-left-content .mid__title h1 {
+    font-size: 28px;
+    line-height: 38px;
+    margin-top: 40px;
+    margin-left: -130px;
+    width: 350px;
+  }
+  .banner-left-content .mid__title p {
+    font-size: 16px;
+    margin-left: -130px;
+  }
+  .cta__carousel button {
+    margin-left: 40px !important;
+    margin-top: -10px;
+  }
+}
 
 
 
@@ -412,7 +481,7 @@ a.navbar-brand:hover {
 .carousel-caption {
   right: auto;
   left: 88%;
-  bottom: 5%;
+  bottom: 0%;
   font-size: 20px;
 }
 
