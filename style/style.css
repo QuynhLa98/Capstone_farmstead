@@ -1,8 +1,6 @@
-<<<<<<< HEAD
+*{ margin: auto;
 
-* {
-=======
-/* Clear */
+}
 .clear {
   clear: both;
 }
@@ -526,7 +524,7 @@ a.navbar-brand:hover {
 }
 
 .service__left p {
->>>>>>> quynhla
+/* >>>>>>> quynhla */
   margin: 0;
   padding: 0;
 }
@@ -801,7 +799,7 @@ a.navbar-brand:hover {
   padding: 10px;
 }
 
-.item {
+.item1 {
   display: flex;
   justify-content: center;
   padding: 30px 20px;
@@ -834,7 +832,7 @@ a.navbar-brand:hover {
   margin-top: 10px;
 }
 
-.item:hover {
+.item1:hover {
   border: 1px solid #eee;
   border-radius: 10px;
   cursor: pointer;
@@ -847,7 +845,7 @@ a.navbar-brand:hover {
   text-decoration: none;
 }
 
-.item:hover h4 {
+.item1:hover h4 {
   color: green;
 }
 
@@ -869,7 +867,7 @@ a.navbar-brand:hover {
 }
 
 .product-text h2 {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 600;
 }
 
@@ -980,7 +978,7 @@ a.navbar-brand:hover {
 .costomer-item .costomer-item-left {
   text-align: center;
   position: relative;
-  top: 40px;
+  top: 20px;
 }
 
 .costomer-item-left img {
@@ -1075,7 +1073,7 @@ a.navbar-brand:hover {
 .footer-logo a i {
   position: absolute;
     left: 70px;
-    top: -5px;
+    top: -7px;
     font-size: 20px;
 }
 
@@ -1136,7 +1134,7 @@ a.navbar-brand:hover {
   height: 30px;
   background-color: #ebfaf1;
   border-radius: 50%;
-  display: inline-block;
+  display: flex;
   text-align: center;
   margin-right: 10px;
   color: #009f4d;
