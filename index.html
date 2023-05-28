@@ -32,9 +32,8 @@
       integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
       crossorigin="anonymous"
     />
-    <!-- Style -->
-    <!-- <link rel="stylesheet" href="./style/style__dark.css"> --> 
-    <link rel="stylesheet" href="./style/style.css" />
+    <!-- Style CSS -->
+    <link id="mode" rel="stylesheet" href="./style/style.css" />
     <title>Farmstead</title>
   </head>
   <body>
@@ -65,8 +64,8 @@
               <!-- Dark mode -->
               <div class="cont-ser-position mr-3 DarkandLight">
                 <nav class="navigation">
-                <i class="fa-regular fa-moon"></i>
-                  <!--  <i class="fa-solid fa-sun"></i>  -->
+                  <i id="btnDark" class="fa-regular fa-moon"></i>
+                  <i id="btnLight" class="fa-solid fa-sun"></i>
                 </nav>
               </div>
               <!-- //Dark mode -->
@@ -100,8 +99,6 @@
               <!-- //menu -->
             </div>
           </div>
-            
-          
         </nav>
       </div>
     </header>
@@ -414,8 +411,16 @@
 
     <!-- JS light-dark -->
     <script>
-      
-
+      var btnDark = document.getElementById("btnDark");
+      btnDark.onclick = function () {
+        var mode = document.getElementById("mode");
+        mode.href = "./style/style__dark.css";
+      };
+      var btnLight = document.getElementById("btnLight");
+      btnLight.onclick = function () {
+        var mode = document.getElementById("mode");
+        mode.href = "./style/style.css";
+      };
     </script>
     <!-- JS light-dark -->
   </body>

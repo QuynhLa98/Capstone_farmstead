@@ -24,23 +24,22 @@ h6 {
 
 /* Header */
 @media only screen and (max-width: 991px) {
-    .main-header {
-        width: auto;
-    }
-    h1.logo {
-        margin-left: -25px;
-    }
-    .nav__right {
-        margin-right: -50px;
-    }
-    .nav__right .navbar  {
-      margin-left: -50px;
-    }
-    .nav__right .DarkandLight {
-      margin-left: 20px;
-    }
+  .main-header {
+    width: auto;
+  }
+  h1.logo {
+    margin-left: -25px;
+  }
+  .nav__right {
+    margin-right: -50px;
+  }
+  .nav__right .navbar {
+    margin-left: -50px;
+  }
+  .nav__right .DarkandLight {
+    margin-left: 20px;
+  }
 }
-
 
 .main-header {
   background-color: transparent;
@@ -162,6 +161,12 @@ a.navbar-brand:hover {
 /* //search */
 
 /*  Dark mode  */
+#btnLight {
+  opacity: 0;
+  position: absolute;
+  right: 75px;
+}
+
 .cont-ser-position {
   margin: 0 25px;
   height: 35px;
@@ -282,8 +287,6 @@ a.navbar-brand:hover {
   }
 }
 
-
-
 @media only screen and (max-width: 1200px) and (min-width: 991px) {
   .carousel,
   .carousel-inner,
@@ -358,8 +361,6 @@ a.navbar-brand:hover {
   }
 }
 
-
-
 @media only screen and (max-width: 767px) and (min-width: 480px) {
   .carousel,
   .carousel-inner,
@@ -386,7 +387,6 @@ a.navbar-brand:hover {
     font-size: 80px;
     margin-top: 20px;
     margin-left: 0px;
-    
   }
   .banner-left-content .mid__title h1 {
     font-size: 28px;
@@ -404,8 +404,6 @@ a.navbar-brand:hover {
     margin-top: -10px;
   }
 }
-
-
 
 .carousel,
 .carousel-inner,
@@ -493,23 +491,22 @@ a.navbar-brand:hover {
   border-bottom-left-radius: 30px;
 }
 
-
 /* Service */
 @media screen and (max-width: 480px) {
-    .service__left h3 {
-        font-size: 18px !important;
-    }
-    .service__left h1 {
-        font-size: 30px !important;
-        line-height: 40px !important;
-    }
-    .service__left p {
-        font-size: 15px !important;
-    }
-    .service .service__img {
-        grid-template-columns: 1fr;
-        grid-gap: 20px;
-    }
+  .service__left h3 {
+    font-size: 18px !important;
+  }
+  .service__left h1 {
+    font-size: 30px !important;
+    line-height: 40px !important;
+  }
+  .service__left p {
+    font-size: 15px !important;
+  }
+  .service .service__img {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
 }
 
 .service__left h3 {
@@ -590,13 +587,13 @@ a.navbar-brand:hover {
 
 /* Catalog */
 @media screen and (max-width: 480px) {
-    .title__height__left h5 {
-        font-size: 18px !important;
-    }
-    .title__height__left h3 {
-        font-size: 30px !important;
-        line-height: 40px !important;
-    }
+  .title__height__left h5 {
+    font-size: 18px !important;
+  }
+  .title__height__left h3 {
+    font-size: 30px !important;
+    line-height: 40px !important;
+  }
 }
 
 .catalog {
